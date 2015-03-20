@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Ninja Forms Recaptcha field
+Plugin Name: Ninja Forms reCAPTCHA
 Description: Adds reCAPTCHA field to Ninja Forms.
 Author: Aman Saini
 Author URI: http://amansaini.me
