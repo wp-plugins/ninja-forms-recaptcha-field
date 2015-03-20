@@ -49,7 +49,7 @@ class Ninja_Forms_Recaptcha_Field {
 	}
 	function recaptcha_field_register() {
 		$args = array(
-			'name' => 'Google Recaptcha',
+			'name' => 'reCAPTCHA',
 			// 'edit_options' => array(
 			// 	array(
 			// 		'type' => 'text',
@@ -94,7 +94,7 @@ class Ninja_Forms_Recaptcha_Field {
 
 		<?php
 	}else{
-		echo 'Please enter Site key for Google Recaptcha';
+		echo 'Please enter Site key for Google reCAPTCHA';
 	}
 	}
 
@@ -138,7 +138,7 @@ class Ninja_Forms_Recaptcha_Field {
 
 
 	function register_recaptcha_submenu_page() {
-		add_submenu_page( 'ninja-forms', 'ReCaptcha Settings', 'ReCaptcha', 'manage_options', 'nf_recaptcha_settings', array( $this, 'nf_recaptcha_settings_callback' ) );
+		add_submenu_page( 'ninja-forms', 'reCAPTCHA Settings', 'reCAPTCHA', 'manage_options', 'nf_recaptcha_settings', array( $this, 'nf_recaptcha_settings_callback' ) );
 	}
 
 		function nf_recaptcha_settings_callback() {
@@ -179,7 +179,7 @@ class Ninja_Forms_Recaptcha_Field {
 
 		add_settings_section(
 			'recaptcha_settings_section',         // ID used to identify this section and with which to register options
-			'Ninja Forms ReCaptcha Settings',                  // Title to be displayed on the administration page
+			'Ninja Forms reCAPTCHA Settings',                  // Title to be displayed on the administration page
 			array( $this, 'recaptcha_settings_callback' ), // Callback used to render the description of the section
 			'nf_recaptcha_settings'                           // Page on which to add this section of options
 		);
@@ -187,7 +187,7 @@ class Ninja_Forms_Recaptcha_Field {
 		// Dwolla ID
 		add_settings_field(
 			'site_key',                      // ID used to identify the field throughout the theme
-			'Recaptcha Site Key',                           // The label to the left of the option interface element
+			'reCAPTCHA Site Key',                           // The label to the left of the option interface element
 			array( $this, 'sitekey_callback' ),   // The name of the function responsible for rendering the option interface
 			'nf_recaptcha_settings',                          // The page on which this option will be displayed
 			'recaptcha_settings_section'
@@ -197,7 +197,7 @@ class Ninja_Forms_Recaptcha_Field {
 		// Dwolla API Key
 		add_settings_field(
 			'secret_key',
-			'Recaptcha Secret Key',
+			'reCAPTCHA Secret Key',
 			array( $this, 'secret_callback' ),
 			'nf_recaptcha_settings',
 			'recaptcha_settings_section'

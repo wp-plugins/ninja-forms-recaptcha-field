@@ -18,6 +18,11 @@ Activate it from wordpress dashboard
 Add the Site Key and Secret from Forms->ReCaptcha
 Edit Form and you will see Google ReCaptcha field under Template Fields
 
+== Screenshots ==
+
+1. reCAPTCHA settings page
+2. reCAPTCHA field
+
 == Changelog ==
 
 = 1.0 =
