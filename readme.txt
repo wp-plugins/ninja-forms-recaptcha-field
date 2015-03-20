@@ -1,4 +1,4 @@
-=== Ninja Forms - Recaptcha Field ===
+=== Ninja Forms - reCAPTCHA ===
 Contributors: aman086
 Tags: ninja forms, forms, field, google recaptcha
 Donate link: http://amansaini.me
