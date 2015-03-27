@@ -10,13 +10,19 @@ License: GPLv2 or later
  Adds reCAPTCHA field to Ninja Forms.
 
 == Description ==
-Adds a "No CAPTCHA reCAPTCHA" field type to Ninja Forms form builder Forms with a "No CAPTCHA reCAPTCHA" will validate the field before successful submission.
+
+= Tough on bots, Easy on humans =
+
+Adds a ** Google reCAPTCHA ** field type to Ninja Forms form builder.
+Forms with a ** reCAPTCHA ** will validate the field before successful submission.
+
+
 
 == Installation ==
-Upload the plugin to wp-content->plugins directory
-Activate it from wordpress dashboard
-Add the Site Key and Secret from Forms->ReCaptcha
-Edit Form and you will see Google ReCaptcha field under Template Fields
+* Upload the plugin to wp-content->plugins directory,
+* Activate it from wordpress dashboard,
+* Add the Site Key and Secret from Forms->ReCaptcha,
+* Edit Form and you will see Google ReCaptcha field under Template Fields
 
 == Screenshots ==
 
