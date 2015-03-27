@@ -14,8 +14,8 @@ License: GPLv2 or later
 = Tough on bots, Easy on humans =
 
 Adds a **Google reCAPTCHA** field type to Ninja Forms form builder.
-Forms with a **reCAPTCHA** will validate the field before successful submission.
 
+Forms with a **reCAPTCHA** will validate the field before successful submission.
 
 
 == Installation ==
