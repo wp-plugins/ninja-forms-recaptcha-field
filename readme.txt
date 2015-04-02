@@ -11,7 +11,7 @@ License: GPLv2 or later
 
 == Description ==
 
-= Tough on bots, Easy on humans =
+`Tough on bots, Easy on humans`
 
 
 Adds a **Google reCAPTCHA** field type to Ninja Forms form builder.
