@@ -21,8 +21,8 @@ Forms with a **reCAPTCHA** will validate the field before successful submission.
 
 * Upload the plugin to wp-content->plugins directory,
 * Activate it from wordpress dashboard,
-* Add the Site Key and Secret from Forms->ReCaptcha,
-* Edit Form and you will see Google ReCaptcha field under Template Fields
+* Add the Site Key and Secret on Forms->reCaptcha,
+* Edit Form and you will see Google reCaptcha field under Template Fields
 
 `Have Suggestion/Feedback`
 
@@ -31,8 +31,8 @@ Forms with a **reCAPTCHA** will validate the field before successful submission.
 == Installation ==
 * Upload the plugin to wp-content->plugins directory,
 * Activate it from wordpress dashboard,
-* Add the Site Key and Secret from Forms->ReCaptcha,
-* Edit Form and you will see Google ReCaptcha field under Template Fields
+* Add the Site Key and Secret on Forms->reCaptcha,
+* Edit Form and you will see Google reCaptcha field under Template Fields
 
 == Screenshots ==
 
