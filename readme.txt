@@ -3,7 +3,7 @@ Contributors: aman086
 Tags: ninja forms, forms, field, google recaptcha
 Donate link: http://amansaini.me
 Requires at least: 3.4
-Tested up to: 4.1
+Tested up to: 4.2
 Stable tag: 1.0
 License: GPLv2 or later
 
