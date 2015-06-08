@@ -4,7 +4,7 @@ Tags: ninja forms, forms, field, google recaptcha
 Donate link: http://amansaini.me
 Requires at least: 3.4
 Tested up to: 4.2
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 
  Adds reCAPTCHA field to Ninja Forms.
@@ -40,6 +40,9 @@ Forms with a **reCAPTCHA** will validate the field before successful submission.
 2. reCAPTCHA field
 
 == Changelog ==
+= 1.2 =
+Fixed compatibility with Ninja Forms v2.9.17 and above
+
 = 1.1 =
 Fixed warning message
 

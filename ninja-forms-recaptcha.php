@@ -5,7 +5,7 @@ Description: Adds reCAPTCHA field to Ninja Forms.
 Author: Aman Saini
 Author URI: http://amansaini.me
 Plugin URI: http://amansaini.me
-Version: 1.1
+Version: 1.2
 Requires at least: 3.5
 Tested up to: 4.2
 
@@ -80,14 +80,23 @@ class Ninja_Forms_Recaptcha_Field {
 
 	}
 
-	public function ninja_forms_recaptcha_display() {
+	public function ninja_forms_recaptcha_display( $field_id, $data, $form_id = '' ) {
 		$lang = 'en';
 		$settings = get_option( 'nf_recaptcha_settings' );
 
 		$siteKey = $settings['site_key'];
 		if ( !empty( $siteKey ) ) { ?>
-		<div class="g-recaptcha" data-sitekey="<?php echo $siteKey; ?>"></div>
+
+	<input id="ninja_forms_field_<?php echo $field_id;?>" name="ninja_forms_field_<?php echo $field_id;?>" type="hidden" class="<?php echo $field_class;?>" value="" rel="<?php echo $field_id;?>" />
+		<div class="g-recaptcha" data-callback="recaptcha_set_value" data-sitekey="<?php echo $siteKey; ?>"></div>
             <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=<?php echo $lang; ?>">
+            </script>
+            <script type="text/javascript">
+            function recaptcha_set_value(inpval){
+
+            	jQuery("#ninja_forms_field_<?php echo $field_id;?>").val(inpval)
+
+            }
             </script>
 
 		<?php
@@ -118,7 +127,7 @@ class Ninja_Forms_Recaptcha_Field {
 
 			if ( $response->success===false ) {
 
-				if ( !empty( $response->{'error-codes'} ) && $response->{'error-codes'}!='missing-input-response' ) {
+				if ( !empty( $response->{'error-codes'} ) && $response->{'error-codes'}[0]!='missing-input-response' ) {
 
 					$error= 'Please check if you have entered Site & Secret key correctly';
 
