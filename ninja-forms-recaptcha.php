@@ -5,7 +5,7 @@ Description: Adds reCAPTCHA field to Ninja Forms.
 Author: Aman Saini
 Author URI: http://amansaini.me
 Plugin URI: http://amansaini.me
-Version: 1.2
+Version: 1.2.1
 Requires at least: 3.5
 Tested up to: 4.2
 
@@ -50,16 +50,6 @@ class Ninja_Forms_Recaptcha_Field {
 	function recaptcha_field_register() {
 		$args = array(
 			'name' => 'reCAPTCHA',
-			// 'edit_options' => array(
-			//  array(
-			//   'type' => 'text',
-			//   'name' => 'recaptcha_field_error',
-			//   'label' => 'Error message on wrong Captcha',
-			//   'class' => 'widefat',
-			//   'value' =>'Captcha mismatch, Please try again.'
-			//  ),
-
-			// ),
 			'display_function' => array( $this, 'ninja_forms_recaptcha_display' ),
 			'group' => '',
 			'edit_label' => true,
@@ -76,23 +66,21 @@ class Ninja_Forms_Recaptcha_Field {
 		);
 		ninja_forms_register_field( 'g_recaptcha', $args );
 
-
-
 	}
 
 	public function ninja_forms_recaptcha_display( $field_id, $data, $form_id = '' ) {
 		$lang = 'en';
 		$settings = get_option( 'nf_recaptcha_settings' );
-
+		$randnumber = rand();
 		$siteKey = $settings['site_key'];
 		if ( !empty( $siteKey ) ) { ?>
 
 	<input id="ninja_forms_field_<?php echo $field_id;?>" name="ninja_forms_field_<?php echo $field_id;?>" type="hidden" class="<?php echo $field_class;?>" value="" rel="<?php echo $field_id;?>" />
-		<div class="g-recaptcha" data-callback="recaptcha_set_value" data-sitekey="<?php echo $siteKey; ?>"></div>
+		<div class="g-recaptcha" data-callback="recaptcha_set_value_<?php echo $randnumber; ?>" data-sitekey="<?php echo $siteKey; ?>"></div>
             <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=<?php echo $lang; ?>">
             </script>
             <script type="text/javascript">
-            function recaptcha_set_value(inpval){
+            function recaptcha_set_value_<?php echo $randnumber; ?>(inpval){
 
             	jQuery("#ninja_forms_field_<?php echo $field_id;?>").val(inpval)
 
