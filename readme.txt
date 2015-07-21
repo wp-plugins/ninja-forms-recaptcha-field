@@ -11,7 +11,9 @@ License: GPLv2 or later
 
 == Description ==
 
-`UPDATE: Ninja Forms version 2.9.20  has now inbuilt integration for Google reCAPTCHA. If you are runnning the latest version of Ninja Forms then you don't have to install this plugin anymore for reCAPTCHA integration`
+`UPDATE: Ninja Forms version 2.9.20  has now inbuilt integration for
+Google reCAPTCHA. If you are runnning the latest version of Ninja Forms
+ then you don't have to install this plugin anymore for reCAPTCHA integration`
 
 
 Adds a **Google reCAPTCHA** field type to Ninja Forms form builder.
