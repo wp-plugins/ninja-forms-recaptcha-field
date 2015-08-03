@@ -30,6 +30,13 @@ Forms with a **reCAPTCHA** will validate the field before successful submission.
 
  Please send me your feedback  <a href="http://amansaini.me/contact/">here</a> for any new features you want to see in next version of this plugin.I will be glad to receive feedback.
 
+`Checkout my Other Ninja Forms Plugins
+<a href="https://ninjaforms.com/extensions/getresponse/">Ninja Forms GetResponse Addon</a>
+<a href="https://ninjaforms.com/extensions/icontact/">Ninja Forms iContact Addon</a>
+<a href="https://ninjaforms.com/extensions/sendy/">Ninja Forms Sendy Addon</a>
+
+`
+
 == Installation ==
 * Upload the plugin to wp-content->plugins directory,
 * Activate it from wordpress dashboard,
