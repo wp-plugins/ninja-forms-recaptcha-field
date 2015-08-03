@@ -1,6 +1,6 @@
 === Ninja Forms - reCAPTCHA ===
 Contributors: aman086
-Tags: ninja forms, forms, field, google recaptcha
+Tags: ninja forms, forms, field, google recaptcha, addon, custom field, getresponse, icontact, sendy
 Donate link: http://amansaini.me
 Requires at least: 3.4
 Tested up to: 4.2
