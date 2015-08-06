@@ -19,21 +19,25 @@ then you don't have to install this plugin anymore for reCAPTCHA integration
 Adds a **Google reCAPTCHA** field type to Ninja Forms form builder.
 Forms with a **reCAPTCHA** will validate the field before successful submission.
 
-`How to use it?`
+
+**How to use it?**
 
 * Upload the plugin to wp-content->plugins directory,
 * Activate it from wordpress dashboard,
 * Add the Site Key and Secret from Forms->ReCaptcha,
 * Edit Form and you will see Google ReCaptcha field under Template Fields
 
+**Checkout my other Ninja Forms Addons**
+* [Ninja Forms Paypal Standard](http://codecanyon.net/item/ninja-forms-paypal-standard-payment-gateway/10047955?ref=webholics)
+* [Ninja Forms GetResponse Addon](https://ninjaforms.com/extensions/getresponse)
+* [Ninja Forms iContact Addon](https://ninjaforms.com/extensions/icontact)
+* [Ninja Forms Sendy Addon](https://ninjaforms.com/extensions/sendy)
+
 `Have Suggestion/Feedback`
 
  Please send me your feedback  <a href="http://amansaini.me/contact/">here</a> for any new features you want to see in next version of this plugin.I will be glad to receive feedback.
 
-`Checkout my other Ninja Forms Addons`
-* <a href="https://ninjaforms.com/extensions/getresponse/">Ninja Forms GetResponse Addon</a>
-* <a href="https://ninjaforms.com/extensions/icontact/">Ninja Forms iContact Addon</a>
-* <a href="https://ninjaforms.com/extensions/sendy/">Ninja Forms Sendy Addon</a>
+
 
 
 == Installation ==
