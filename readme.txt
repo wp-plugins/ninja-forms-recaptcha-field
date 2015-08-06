@@ -28,6 +28,7 @@ Forms with a **reCAPTCHA** will validate the field before successful submission.
 * Edit Form and you will see Google ReCaptcha field under Template Fields
 
 **Checkout my other Ninja Forms Addons**
+
 * [Ninja Forms Paypal Standard](http://codecanyon.net/item/ninja-forms-paypal-standard-payment-gateway/10047955?ref=webholics)
 * [Ninja Forms GetResponse Addon](https://ninjaforms.com/extensions/getresponse)
 * [Ninja Forms iContact Addon](https://ninjaforms.com/extensions/icontact)
