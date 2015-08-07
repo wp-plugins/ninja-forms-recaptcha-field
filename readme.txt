@@ -53,10 +53,10 @@ Forms with a **reCAPTCHA** will validate the field before successful submission.
 2. reCAPTCHA field
 
 == Changelog ==
-= 1.2.2=
+= 1.2.2 =
 Removed recaptcha values from submission
 
-= 1.2.1=
+= 1.2.1 =
 Fixed submission issue if multiple forms are present on a page.
 
 = 1.2 =
