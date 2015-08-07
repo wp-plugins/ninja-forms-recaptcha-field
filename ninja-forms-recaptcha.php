@@ -5,7 +5,7 @@ Description: Adds reCAPTCHA field to Ninja Forms.
 Author: Aman Saini
 Author URI: http://amansaini.me
 Plugin URI: http://amansaini.me
-Version: 1.2.1
+Version: 1.2.2
 Requires at least: 3.5
 Tested up to: 4.2
 
@@ -61,8 +61,8 @@ class Ninja_Forms_Recaptcha_Field {
 			'edit_meta' => false,
 			'sidebar' => 'template_fields',
 			'edit_conditional' => false,
+			'process_field' => false,
 			'pre_process' => array( $this, 'ninja_forms_field_recaptcha_pre_process' ),
-			//'req_validation' => array( $this, 'ninja_forms_field_recaptcha_req_validation' ),
 		);
 		ninja_forms_register_field( 'g_recaptcha', $args );
 
