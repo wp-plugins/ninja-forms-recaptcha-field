@@ -5,7 +5,7 @@ Description: Adds reCAPTCHA field to Ninja Forms.
 Author: Aman Saini
 Author URI: http://amansaini.me
 Plugin URI: http://amansaini.me
-Version: 1.2.2
+Version: 1.2.3
 Requires at least: 3.5
 Tested up to: 4.2
 
@@ -117,11 +117,13 @@ class Ninja_Forms_Recaptcha_Field {
 
 				if ( !empty( $response->{'error-codes'} ) && $response->{'error-codes'}[0]!='missing-input-response' ) {
 
-					$error= 'Please check if you have entered Site & Secret key correctly';
+					$error= __('Please check if you have entered Site & Secret key correctly','ninja-forms-recaptcha');
 
 				}else {
 
-					$error= 'Captcha mismatch, Please try again.';
+					$error=  __('Captcha mismatch, Please try again.','ninja-forms-recaptcha');
+
+
 				}
 
 				$ninja_forms_processing->add_error( 'error_recaptcha', $error );
